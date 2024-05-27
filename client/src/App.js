@@ -8,12 +8,15 @@ import ListingDetails from "./pages/ListingDetails";
 import PropertyList from "./pages/PropertyList";
 import CategoryPage from "./pages/CategoryPage";
 import SearchPage from "./pages/SearchPage";
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+        <Toaster />
         <Routes>
+
           <Route path="/" element={<HomePage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />

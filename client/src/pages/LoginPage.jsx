@@ -35,6 +35,8 @@ const LoginPage = () => {
           })
         )
         navigate("/")
+      }else{
+        navigate("/login")
       }
 
     } catch (err) {
